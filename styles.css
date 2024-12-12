@@ -163,3 +163,62 @@ button img {
 .accessibility {
     margin: 1rem;
 }
+
+@media (max-width: 768px) {
+    /* Hide the navigation links by default */
+    .nav-links {
+      display: none;
+    }
+  }
+
+  .basic-contact-details {
+    font-family: Arial, sans-serif;
+}
+
+.contact-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between the icon and text */
+    font-size: 16px;
+    color: #333; /* Neutral text color */
+}
+
+.contact-item img.icon {
+    height: 24px;
+    width: 24px;
+}
+
+.contact-item a {
+    text-decoration: none; /* Remove blue underline */
+    color: #4270b7; /* Use a custom color for links */
+    font-weight: 500; /* Slightly bold for emphasis */
+}
+
+
+#contact .contact-icons .icon{
+    height: 36px;
+    width: 36px;
+}
+
+#contact .contact-icons {
+    display: inline;
+    gap: 20px;
+}
+
+.designation {
+    color: #999;
+    font-weight: lighter;
+    display: block;
+}
+
+.company {
+    font-weight: bolder;
+    display: block;
+}
+
