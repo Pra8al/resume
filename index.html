@@ -6,67 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Resume of Prabal Saxena - Software Development Engineer with 9+ years of experience.">
-    <title>Prabal Saxena - Experienced Full Stack Engineer with a Passion for Technology</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400&family=Open+Sans:wght@300&display=swap"
-        rel="stylesheet">
+    <meta name="author" content="Prabal Saxena">
+    <meta name="keywords" content="Full Stack Developer, Prabal Saxena, Java, Angular, Pune">
+    <title>Prabal Saxena - Experienced Full Stack Engineer</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts/theme.js" defer></script>
 </head>
 
 <body>
-
-    <header role="banner">
-        <nav aria-label="Main Navigation">
-            <ul>
-                <li><a href="#objective">Objective</a></li>
-                <li><a href="#summary">Professional Summary</a></li>
-                <li><a href="#technical-expertise">Technical Expertise</a></li>
-                <li><a href="#experience">Professional Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <header>
+        <div class="header-container">
+            <nav aria-label="Main Navigation">
+                <ul class="nav-links">
+                    <li><a href="#objective">Objective</a></li>
+                    <li><a href="#summary">Summary</a></li>
+                    <li><a href="#technical-expertise">Technical Expertise</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <div id="google_translate_element" aria-label="Language Selector"></div>
+                <button><a href="assets/resume.pdf" download>
+                        <img src="assets/download.svg" alt="Download PDF" style="width: 40px; cursor: pointer;" />
+                    </a>
+                </button>
+                <button id="theme-toggle" aria-label="Toggle dark or light theme" title="Toggle Theme">🌙</button>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <div class="header-container">
-                <div class="name-details">
-                    <h1>Prabal Saxena</h1>
-                    <p>Pune, India, 411057</p>
-                    <p>Email: <a href="mailto:prabalsaxena4@gmail.com"
-                            aria-label="Email Prabal Saxena">prabalsaxena4@gmail.com</a></p>
-                </div>
-                <div class="profile-image">
-                    <img src="assets/MyPicture.jpg" alt="Prabal Saxena" />
-                </div>
+
+    <main id="main-content">
+        <section class="header-container">
+            <div class="name-details">
+                <h1>Prabal Saxena</h1>
+                <p>Pune, India</p>
+                <p>Email: <a href="mailto:prabalsaxena4@gmail.com">prabalsaxena4@gmail.com</a></p>
+            </div>
+            <div class="profile-image">
+                <img src="assets/MyPicture.jpg" alt="Prabal Saxena">
             </div>
         </section>
 
         <section id="objective">
-            <h2>Objective</h2>
-            <p>Seeking Senior Full Stack Engineer role with an organization that provides ample scope to utilize my
-                skills and knowledge, and to involve myself as part of a team that will work towards the growth of the
-                organization.</p>
+            <h2 data-translate="objective">Objective</h2>
+            <p>Seeking a Senior Full Stack Engineer role with an organization that provides ample scope to utilize my
+                skills and knowledge.</p>
         </section>
 
         <section id="summary">
-            <h2>Professional Summary</h2>
+            <h2 data-translate="professionalSummary">Professional Summary</h2>
             <ul>
                 <li>Currently working as a Full Stack Developer at Citi (CSIPL), Pune, with 9+ years of experience.</li>
-                <li>Expertise in Java with a strong grasp of <strong>OOPs, Design Patterns, SOLID principles, Data
-                        Structures, and Algorithms.</strong></li>
-                <li>Worked on a <strong>array of technologies</strong> , ranging from constructing robust data pipelines
-                    and designing data stores in big data environments to developing machine learning models for anomaly
-                    detection.</li>
-                <li>Created user-friendly interfaces, enhancing application usability and scalability with exceptional
-                    user experiences.</li>
-                <li>Engaged in coding challenges on platforms like <a href="https://leetcode.com/u/prabal_s/"
-                        target="_blank" aria-label="LeetCode Profile">LeetCode</a>, showcasing problem-solving skills.
-                    My <a href="https://github.com/Pra8al" target="_blank" aria-label="GitHub Profile">GitHub</a>
-                    portfolio features well-documented solutions, emphasizing a commitment to continuous learning.</li>
-
+                <li>Expertise in Java with a strong grasp of <strong>OOPs, Design Patterns, SOLID principles, and
+                        DSA.</strong></li>
+                <li>Experience building scalable user interfaces and robust backend APIs.</li>
+                <li>Contributed to open-source projects on GitHub and solved 400+ DSA problems on LeetCode.</li>
             </ul>
         </section>
 
@@ -145,9 +141,23 @@
     </main>
 
     <footer role="contentinfo">
+        <p class="accessibility">
+            <a href="https://www.w3.org/WAI/" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.w3.org/WAI/wcag2AA-blue" alt="WCAG 2.1 AA Accessibility Compliant"
+                style="height: 40px;" />
+            </a>
+        </p>
         <p>&copy; 2024 Prabal Saxena. All Rights Reserved.</p>
     </footer>
 
+
+    <!-- Add Google Translate Widget -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+    </script>
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>
